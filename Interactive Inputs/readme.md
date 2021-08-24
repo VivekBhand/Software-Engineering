@@ -1,4 +1,4 @@
-## content of this folder
+# Content of folder:
 
-### code snippet of radio button
-### code snippet of drop down list
+### 1. Code snippet of radio button
+### 2. Code snippet of drop down list
