@@ -1,4 +1,11 @@
-global userbox, passbox, login, guest, topframe, bottomframe, image_1
+def GET():
+    global userbox, passbox, error
+    S1 = userbox.get()
+    S2 = passbox.get()
+    print("User "+s1+ " logged in the system")
+
+def Entry():
+    global userbox, passbox, login, guest, topframe, bottomframe,label_7
     root = tkinter.Tk()
     root.geometry("800x720+0+0")
     root.config(bg='steelblue')
@@ -12,8 +19,13 @@ global userbox, passbox, login, guest, topframe, bottomframe, image_1
     password = tkinter.Label(root, text="PASSWORD")
     passbox = tkinter.Entry(root, show="*")
     login = tkinter.Button(root, text="LOGIN", bg='yellow', command=GET, font="arial 8 bold")
-    guest = tkinter.Button(root, text="GUEST LOGIN", bg='yellow', command=appoint, font="arial 8 bold")
-    button = tkinter.Button(root, text="COVID DATA", bg='yellow', command=corona, font="arial 8 bold")
+    label_7 = Label(root3, text=" COVID SYMPOTMS?", width=20, font=("bold", 9))
+    label_7.place(x=80, y=305)
+
+    r3 = Radiobutton(root3, text="YES", padx=10, variable=Symptoms, value=1)
+    r3.place(x=235, y=305)
+    r4 = Radiobutton(root3, text="NO", padx=30, variable=Symptoms, value=2)
+    r4.place(x=300, y=305)
     heading.pack(side=tkinter.TOP)
     heading.place(x=155, y=30)
     username.pack(side=tkinter.TOP)
@@ -31,7 +43,7 @@ global userbox, passbox, login, guest, topframe, bottomframe, image_1
     guest.place(x=235, y=220)
     button.pack(side=tkinter.TOP)
     button.place(x=360, y=220)
-    root.title("DATABASE LOGIN")
+    root.title("INPUT")
     root.mainloop()
 
 
