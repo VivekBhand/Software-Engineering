@@ -19,7 +19,7 @@ def Entry():
     password = tkinter.Label(root, text="PASSWORD")
     passbox = tkinter.Entry(root, show="*")
     login = tkinter.Button(root, text="LOGIN", bg='yellow', command=GET, font="arial 8 bold")
-    label_7 = Label(root3, text=" COVID SYMPOTMS?", width=20, font=("bold", 9))
+    label_7 = Label(root3, text=" Are you happy?", width=20, font=("bold", 9))
     label_7.place(x=80, y=305)
 
     r3 = Radiobutton(root3, text="YES", padx=10, variable=Symptoms, value=1)
